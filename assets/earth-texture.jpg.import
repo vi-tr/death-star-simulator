@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwywch5i8w0r5"
-path.s3tc="res://.godot/imported/world.200408.3x5400x2700.jpg-ed25ff310e5dedf397308c8385d6ccf0.s3tc.ctex"
+path.s3tc="res://.godot/imported/earth-texture.jpg-56730c1fd885bd7ef66be09bfee00aab.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://solar-impulse-flight-path/source/9e116b39623945b8b5d18c2f79ac227b/textures/world.200408.3x5400x2700.jpg"
-dest_files=["res://.godot/imported/world.200408.3x5400x2700.jpg-ed25ff310e5dedf397308c8385d6ccf0.s3tc.ctex"]
+source_file="res://assets/earth-texture.jpg"
+dest_files=["res://.godot/imported/earth-texture.jpg-56730c1fd885bd7ef66be09bfee00aab.s3tc.ctex"]
 
 [params]
 
