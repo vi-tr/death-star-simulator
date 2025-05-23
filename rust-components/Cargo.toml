@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-cargo = "0.88.0"
+godot = "0.2.4"
 
 [lib]
 crate-type = ["cdylib"]
