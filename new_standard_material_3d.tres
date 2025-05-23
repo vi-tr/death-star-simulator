@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bb86iwj3cu20c"]
+
+[ext_resource type="Texture2D" uid="uid://cwywch5i8w0r5" path="res://solar-impulse-flight-path/source/9e116b39623945b8b5d18c2f79ac227b/textures/world.200408.3x5400x2700.jpg" id="1_xxpdj"]
+[ext_resource type="Texture2D" uid="uid://bfc57ektdhi0p" path="res://solar-impulse-flight-path/source/9e116b39623945b8b5d18c2f79ac227b/textures/world-elevation.png" id="2_4w8n5"]
+
+[resource]
+albedo_texture = ExtResource("1_xxpdj")
+normal_enabled = true
+normal_scale = 0.16
+normal_texture = ExtResource("2_4w8n5")
+heightmap_texture = ExtResource("2_4w8n5")
