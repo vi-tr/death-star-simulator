@@ -1,29 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsyw5ne2rmrg3"]
+[gd_scene load_steps=3 format=3 uid="uid://dsyw5ne2rmrg3"]
 
-[ext_resource type="Texture2D" uid="uid://cwywch5i8w0r5" path="res://assets/earth-texture.jpg" id="1_pyidc"]
 [ext_resource type="Script" uid="uid://04ey7ywf7men" path="res://init_scene.gd" id="1_vvh5c"]
-[ext_resource type="Texture2D" uid="uid://bfc57ektdhi0p" path="res://assets/earth-elevation.png" id="2_vvh5c"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vho56"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28aoi"]
-albedo_texture = ExtResource("1_pyidc")
-normal_enabled = true
-normal_texture = ExtResource("2_vvh5c")
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_vvh5c")
 
 [node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.144, -23.7363, 26.7587)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.6825, 5.26755, -13.1508)
 shape = SubResource("CapsuleShape3D_vho56")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-
-[node name="Earth" type="CSGSphere3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2391, 0, -12.0262)
-radius = 8.93785
-radial_segments = 28
-rings = 22
-material = SubResource("StandardMaterial3D_28aoi")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.6825, 5.26755, -13.1508)

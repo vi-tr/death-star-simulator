@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://caum36b70xfle"
-path="res://.godot/imported/ontrol-room-2.glb-bf620cf9d1de061a2e2fb606ce078d5b.scn"
+path="res://.godot/imported/ontrol-room-2.glb-ad032dd5bc372dc9079107a04edae2cb.scn"
 
 [deps]
 
-source_file="res://ontrol-room-2.glb"
-dest_files=["res://.godot/imported/ontrol-room-2.glb-bf620cf9d1de061a2e2fb606ce078d5b.scn"]
+source_file="res://assets/ontrol-room-2.glb"
+dest_files=["res://.godot/imported/ontrol-room-2.glb-ad032dd5bc372dc9079107a04edae2cb.scn"]
 
 [params]
 
