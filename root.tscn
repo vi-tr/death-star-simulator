@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsyw5ne2rmrg3"]
+[gd_scene load_steps=6 format=3 uid="uid://dsyw5ne2rmrg3"]
 
 [ext_resource type="Texture2D" uid="uid://cwywch5i8w0r5" path="res://assets/earth-texture.jpg" id="1_pyidc"]
+[ext_resource type="Script" uid="uid://04ey7ywf7men" path="res://init_scene.gd" id="1_vvh5c"]
 [ext_resource type="Texture2D" uid="uid://bfc57ektdhi0p" path="res://assets/earth-elevation.png" id="2_vvh5c"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vho56"]
@@ -11,6 +12,7 @@ normal_enabled = true
 normal_texture = ExtResource("2_vvh5c")
 
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_vvh5c")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 
