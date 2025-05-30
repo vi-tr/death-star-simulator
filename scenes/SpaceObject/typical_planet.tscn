@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://14vqbg8l204g"]
+
+[ext_resource type="Script" uid="uid://ccilqyemf2orp" path="res://scenes/SpaceObject/SpaceObject.gd" id="1_36uqf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_n78xp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36uqf"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_pxgb4"]
+
+[node name="SpaceObject" type="CharacterBody3D"]
+script = ExtResource("1_36uqf")
+
+[node name="mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_n78xp")
+surface_material_override/0 = SubResource("StandardMaterial3D_36uqf")
+
+[node name="coll" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_pxgb4")

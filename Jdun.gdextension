@@ -12,4 +12,3 @@ macos.debug =            "res://rust-components/target/debug/librust_components.
 macos.release =          "res://rust-components/target/release/librust_components.dylib"
 macos.debug.arm64 =      "res://rust-components/target/debug/librust_components.dylib"
 macos.release.arm64 =    "res://rust-components/target/release/librust_components.dylib"
-
