@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://blthc4gpksno4"]
+
+[ext_resource type="Material" uid="uid://dpqvnrddyv6jj" path="res://scenes/level/new_panorama_sky_material.tres" id="1_h3e3j"]
+[ext_resource type="Script" uid="uid://cex47s3tbnnue" path="res://scenes/level/level.gd" id="1_i166f"]
+[ext_resource type="PackedScene" uid="uid://14vqbg8l204g" path="res://scenes/SpaceObject/typical_planet.tscn" id="2_nbgty"]
+
+[sub_resource type="Sky" id="Sky_nbgty"]
+sky_material = ExtResource("1_h3e3j")
+
+[sub_resource type="Environment" id="Environment_i166f"]
+background_mode = 2
+background_energy_multiplier = 0.16
+sky = SubResource("Sky_nbgty")
+
+[node name="Level" type="Node3D"]
+script = ExtResource("1_i166f")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_i166f")
+
+[node name="sun" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+
+[node name="earth" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(0.4, 0, 0, 0, 0.399999, -0.000698131, 0, 0.000698131, 0.399999, 0, 0, 100)
+
+[node name="Camera3D" type="Camera3D" parent="earth"]
+transform = Transform3D(2.44763, -8.20634e-08, -0.509017, 0.333234, 1.88981, 1.60237, 0.384778, -1.63666, 1.85022, 0, 2.09926, 2.11403)
+fov = 106.306
+
+[node name="pluto" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 3948)
+
+[node name="neptune" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 3007)
+
+[node name="uranus" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 1918)
+
+[node name="saturn" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 958)
+
+[node name="jupiter" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 520)
+
+[node name="mars" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 152)
+
+[node name="moon" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 100.4)
+
+[node name="venus" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 72)
+
+[node name="mercury" parent="." instance=ExtResource("2_nbgty")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 39)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
