@@ -24,6 +24,10 @@ transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
 [node name="earth" parent="." instance=ExtResource("2_nbgty")]
 transform = Transform3D(0.4, 0, 0, 0, 0.399999, -0.000698131, 0, 0.000698131, 0.399999, 0, 0, 100)
 
+[node name="Camera3D" type="Camera3D" parent="earth"]
+transform = Transform3D(2.44763, -8.20634e-08, -0.509017, 0.333234, 1.88981, 1.60237, 0.384778, -1.63666, 1.85022, 0, 2.09926, 2.11403)
+fov = 106.306
+
 [node name="pluto" parent="." instance=ExtResource("2_nbgty")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 3948)
 
@@ -50,9 +54,5 @@ transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 72)
 
 [node name="mercury" parent="." instance=ExtResource("2_nbgty")]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 39)
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.979053, 0, -0.203607, 0, 1, 0, 0.203607, 0, 0.979053, 0, 0.0584602, 101.492)
-fov = 106.306
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

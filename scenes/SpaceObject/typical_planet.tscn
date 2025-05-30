@@ -8,7 +8,7 @@
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_pxgb4"]
 
-[node name="SpaceObject" type="CharacterBody3D"]
+[node name="SpaceObject" type="CharacterBody3D" groups=["SpaceObjects"]]
 script = ExtResource("1_36uqf")
 
 [node name="mesh" type="MeshInstance3D" parent="."]
