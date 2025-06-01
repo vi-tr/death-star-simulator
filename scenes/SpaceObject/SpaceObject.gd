@@ -6,7 +6,6 @@ class_name SpaceObject
 var mass = 100
 var rotation_speed = 0.0  # радианы в секунду
 
-
 # period — период вращения в игровых днях (например, 1 день для Земли)
 # day_duration — сколько секунд реального времени соответствует одному игровому дню
 func set_material(patch_material: String, new_mass: float = 100, period: float = 1.0, day_duration: float = 1.0) -> void:
